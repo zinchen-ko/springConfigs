@@ -18,7 +18,9 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         ddl-auto: update
   application:
-    name: lab2soa1conf
+    name: defiant-server
+  profiles:
+    active: dev
   config:
     import: optional:configserver:http://localhost:8888
   cloud:
